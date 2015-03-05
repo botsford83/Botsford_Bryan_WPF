@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Output Variables</h1>
+	<p>Answers</p>
+	
+	<p id="name"></p>
+	<script src=js/name.js></script>
+	
+		<p id="state"></p>
+		<script src=js/state.js.></script>
+		
+			<p id="hobbies"></p>
+			<script src=js/hobbies.js></script>
+
+		<p id="army"></p>
+		<script src=js/army.js></script>
+		
+<script>
+//This is my function for the yes button, so when I click the yes button on the page it displays the following message
+	function gradingOutput()
+	{
+		alert("WHOOOOHOOOOOO!!!!");
+	}
+</script>
+	<script>
+//This is my function for the no button, so when I click the no button on the page it displays the following message
+		function gradingOutput1()
+		{
+			alert("I will do better next time");
+		}
+	</script>
+<input type='text' id='myText' value='Did I pass??' />
+<input type='button' id='myButtonyes' value='yes' onClick='gradingOutput()' />
+<input type='button' id='myButtonNo' value='no' onClick="gradingOutput1()" />
+
+</body>
+</html>
