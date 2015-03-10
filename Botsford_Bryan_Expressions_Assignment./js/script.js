@@ -6,16 +6,35 @@
 
 
 //Variables
-var rightTriangle;
-var A;
-var B;
+var triangleValues = ["A", "B", "C"];
+var sideA = "A";
+var sideB = "B";
+var sideC = "C";
+var numberOfSides = 3;
 
 //Prompts
-rightTriangle = prompt("The Pythagorean Theorem is used to find the hypotenuse of a right angled triangle.  The formula is the square root of(a2 + b2 = c2.");
-A = Number(prompt("What is the value of side A"));
-B = Number(prompt("What is the value of side B"));
+triangleValues = prompt("What are the two sides given in the problem (separate with a comma)");
+sideA = Number(prompt("What is the value of side A, if no value is given press okay"));
+sideB = Number(prompt("What is the value of side B, if no value is given press okay"));
+sideC = Number(prompt("What is the value of side C, if no value is given press okay"));
 
 //Outputs
-console.log("The Value of side A is" + " " + (A * A));
-console.log("The Value of side B is" + " " + (B * B));
-console.log("The hypotenuse or the value of side C is" + " " + Math.sqrt(A * A + B * B));
+console.log("The two sides of the triangle are given" + " " + triangleValues + ".");
+if (triangleValues == "a,b")
+{
+    console.log("The value of side A is" + " " + (sideA * sideA) + ".");
+    console.log("The value of side B is" + " " + (sideB * sideB) + ".");
+    console.log("The hypotenuse is" + " " + Math.sqrt(sideA * sideA + sideB * sideB) + ".");
+}
+else if (triangleValues == "a,c")
+{
+    console.log("The value of side A is" + " " + (sideA * sideA) + ".");
+    console.log("The value of side C is" + " " + (sideC * sideC) + ".");
+    console.log("The value of side B is" + " " + Math.sqrt(sideC * sideC - sideA * sideA) + ".");
+}
+else
+{
+    console.log("The value of side B is" + " " + (sideB * sideB) + ".");
+    console.log("The value of side C is" + " " + (sideC * sideC) + ".");
+    console.log("The value of side A is" + " " + Math.sqrt(sideC * sideC - sideB * sideB) + ".");
+}
