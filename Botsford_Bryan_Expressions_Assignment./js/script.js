@@ -6,3 +6,9 @@
 var assignmentNames = ["quiz", "reading", "test", "research"];
 var numberOfAssignments = 4;
 var total = "400 total points";
+
+//Prompts
+quiz = Number(prompt("What was your quiz grade?"));
+reading = Number(prompt("What was your reading grade?"));
+test = Number(prompt("What was your test grade?"));
+research = Number(prompt("What was your research grade?"));
