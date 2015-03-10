@@ -15,5 +15,7 @@ rightTriangle = confirm("The Pythagorean Theorem is used to find the hypotenuse 
 A = Number(prompt("What is the value of side A"));
 B = Number(prompt("What is the value of side B"));
 
-
-
+//Outputs
+console.log("The Value of side A is" + " " + (A * A));
+console.log("The Value of side B is" + " " + (B * B));
+console.log("The hypotenuse or the value of side C is" + " " + Math.sqrt(A * A + B * B));
