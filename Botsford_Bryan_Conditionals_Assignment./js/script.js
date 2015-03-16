@@ -21,3 +21,16 @@ var sideC = C * C;
 
 
 // Console
+if (A && B > 0) {
+    console.log("Side A² =" + " " + sideA);
+    console.log("Side B² =" + " " + sideB);
+    console.log("Side C² =" + " " + sideA + sideB);
+} else if (A && C > 0){
+    console.log("Side A² =" + " " + sideA);
+    console.log("Side B² =" + " " + (sideC - sideA);
+    console.log("Side C² =" + " " + sideC);
+} else {
+    console.log("Side A² =" + " " + (sideC - sideB));
+    console.log("Side B² =" + " " + sideB);
+    console.log("Side C² =" + " " + sideC);
+}
