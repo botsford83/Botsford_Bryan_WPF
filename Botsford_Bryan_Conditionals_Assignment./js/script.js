@@ -7,8 +7,6 @@
  */
 
 // alerts
-// code to alert user they will be using pythagoras theorem
-alert("This will allow you to use Pythagoras Theorem (A² + B² = C²) to find the hypotenuse of a right triangle.");
 
 // Prompts
 // code to prompt user for the value of each side and cast it into a number
@@ -34,6 +32,8 @@ var sideC = C * C;
 
 
 // Outputs
+
+console.log("This will allow you to use Pythagoras Theorem (A² + B² = C²) to find the hypotenuse of a right triangle");
 // code to check if the user entered a value for side A and side B
 if (A && B > 0) {
     console.log("Side A² = " + sideA);// displays the value of side A²
@@ -51,4 +51,6 @@ if (A && B > 0) {
     console.log("Side C² = " + sideC);// displays the value of side C²
     console.log("The hypotenuse is " + C + "²");// displays the hypotenuse the user already provided
 }
-
+/* I used the value 3 for side A and the value 4 for side B.
+I got the value 5 for side C.
+*/
