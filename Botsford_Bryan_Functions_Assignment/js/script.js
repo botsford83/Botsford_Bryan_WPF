@@ -22,7 +22,7 @@ function powerball() {
         for (var p = 0; p < pbn.length; p++) {
             // Checking to make sure a number was not already selected and if it was then break
             if(pbn[p] == random) {
-                found = true;
+                found = true; // changing found to be true if it finds [p] (in myarray)
                 break;
             }
 
