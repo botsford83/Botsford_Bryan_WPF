@@ -78,3 +78,5 @@ else {
 // Output
     console.log(myString + fLottery());
 }
+/* Powerball number: 14, 54, 13, 51, 24 with PB 23
+   FL lottery number: 18, 38, 44, 9, 52, 42 */
